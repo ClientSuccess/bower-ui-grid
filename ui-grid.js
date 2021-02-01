@@ -2284,7 +2284,7 @@ angular.module("ui.grid").directive("uiGridCell", [
                   }
                 }
 
-                if (a.title < b.title) {
+                if (a.title.toLowerCase() < b.title.toLowerCase()) {
                   return -1;
                 } else if (a.title > b.title) {
                   return 1;
